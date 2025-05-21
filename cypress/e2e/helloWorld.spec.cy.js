@@ -7,6 +7,6 @@ describe('Hello World Test', () =>{
 
    // cy.contains('Welcome back, Baljinder');
     cy.viewport('macbook-15');
-    cy.contains('Hello world2 new ');
+    cy.contains('Hello world2 new 123 ');
     });
 });
