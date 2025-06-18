@@ -1,5 +1,5 @@
 describe('This is assertion learning test', () =>{
-
+// This test is to learn how to add assertions using should plus with and
 it ('Checking some assertion', () => {
 
 cy.visit('https://example.cypress.io')   
