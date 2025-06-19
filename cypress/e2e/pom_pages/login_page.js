@@ -1,22 +1,28 @@
 export class LoginPage{
 
+// added all the locator elements up here now 
+
+ username_text= ':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input'
+ password_value= ':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input'
+ loginButton= '.oxd-button'
 
 
-    enterUsername(username1){
+
+    enterUsername(user){
       
-        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(username1)
+        cy.get(this.username_text).type(user)
 
     }
 
-    enterPassword(password2){
+    enterPassword(pass){
        
-        cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(password2)
+        cy.get(this.password_value).type(pass)
 
     }
 
     clickLogin()   {
        
-        cy.get('.oxd-button').click()
+        cy.get(this.loginButton).click()
     
 
     }
