@@ -7,7 +7,6 @@ export class LoginPage{
  loginButton= '.oxd-button'
 
 
-
     enterUsername(user){
       
         cy.get(this.username_text).type(user)

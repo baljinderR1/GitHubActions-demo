@@ -7,5 +7,7 @@ describe('Sample Test', () =>{
     cy.visit('https://linkedin.com');
     cy.viewport('macbook-15');
     cy.log('Hello how are you ?')
+    cy.screenshot('my-screenshot');
+
     });
 });

@@ -16,5 +16,12 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+// This will run before all the tests 
+beforeEach(function () {
+
+    cy.log('I am inside e2e.js')
+
+})
+
 //mochawesome reporting
 import 'cypress-mochawesome-reporter/register';

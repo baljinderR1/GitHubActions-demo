@@ -3,6 +3,8 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
 
+  video: true,
+  screenshotsFolder: "my-custom-screenshots",
 reporter: 'cypress-mochawesome-reporter',
 
  /* reporter : 'mochawesome',

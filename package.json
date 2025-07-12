@@ -2,9 +2,19 @@
   "name": "baljintestcypress",
   "version": "1.0.0",
   "main": "index.js",
+
+
+
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "pretest" : " echo I am pretest",
+    "posttest" : "echo I am post test",
+    "test" : "echo I am real test ",
+    "cy-test" : "cypress run"
   },
+
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
